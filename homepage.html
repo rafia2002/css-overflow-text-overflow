@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <link rel="stylesheet" href="style/overflow.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Layout - Overflow</h1>
+        <nav>
+            <button  class="btn-primary" title="move to .......... topic">previous</button>
+            <button class="btn-primary" title=" move to TEXT-OVERFLOW topic">next</button>
+        </nav>
+    </header>
+    <section class="demo">
+        <h3>The CSS <span id="overflow">Overflow</span> property controls what happens to content that is too big to fit into an area.</h3>
+        <p>This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+        <button class="btn-primary" title="show html,css code and output">try it yourself</button>
+    </section>
+    <section class="CSS-Overflow">
+       
+       <div>
+        <h2>CSS Overflow</h2>
+        <p>The <span id="overflow"> overflow</span> property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p><br>
+        <p>The overflow property has the following values:</p>
+        <ul>
+            <li><span id="overflow">visible</span> - Default. The overflow is not clipped. The content renders outside the element's box</li>
+            <li><span id="overflow">hidden</span> - The overflow is clipped, and the rest of the content will be invisible</li>
+            <li><span id="overflow">scroll</span> - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+            <li><span id="overflow">auto</span> - Similar to <span id="overflow">scroll</span>, but it adds scrollbars only when necessary</li>
+        </ul>
+       </div> 
+        <div class="note">
+            <p><b>Note:</b> The overflow property only works for block elements with a specified height.</p>
+            <p><b>Note:</b> In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).</p>
+        </div>
+    </section>
+    <!-- overflow: hidden -->
+    <section class="overflow-hidden">
+      <div><h2>overflow: hidden</h2>
+        <p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+        <p class="hidden-overflow">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+    </div>  
+    <div class="hidden-overflow-example">
+       <h2>Example</h2>
+       <p> <span id="div">div </span> { <br>
+        <span id="red">overflow</span> : <span id="blue">hidden</span> ;<br>
+          }
+        </p>
+        <button class="btn-primary" title="overflow hidden code and output">Try it yourself</button>
+    </div>
+
+    </section>
+
+    <!-- overflow: visible -->
+
+    <section class="overflow-visible">
+        <div>
+            <h2>overflow: visible</h2>
+            <p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+            <p class="visible-overflow">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+ 
+        </div>
+        
+        <div class="visible-overflow-example">
+            <h2>Example</h2>
+            <p>
+               <span id="div"> div </span> {<br>
+                <span id="red">width</span>:<span id="blue"> 200px</span>;<br>
+                <span id="red">height</span>: <span id="blue">65px</span>;<br>
+                <span id="red">background-color</span>:<span id="blue"> coral</span>;<br>
+                <span id="red"> overflow</span>:<span id="blue"> visible</span>;
+              }
+             </p>
+             <button class="btn-primary" title="overflow visible code and output">Try it yourself</button>
+         </div>
+    </section>
+<!-- overflow: scroll -->
+    <section class="overflow-scroll">
+        <div><h2>overflow: scroll</h2>
+          <p>Setting the value to <span id="overflow"> scroll</span>, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+         <p class="scroll-overflow">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+      </div>  
+      <div class="scroll-overflow-example">
+         <h2>Example</h2>
+         <p> <span id="div">div </span> { <br>
+          <span id="red">overflow</span> : <span id="blue">scroll</span> ;<br>
+            }
+          </p>
+          <button class="btn-primary" title=" scroll overflow code and output">Try it yourself</button>
+      </div>
+  
+      </section>
+
+      <!-- overflow: auto -->
+      <section class="overflow-auto">
+        <div><h2>overflow: auto</h2>
+          <p>The <span id="overflow">auto</span> value is similar to scroll, but it adds scrollbars only when necessary:</p>
+         <p class="auto-overflow">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+      </div>  
+      <div class="auto-overflow-example">
+         <h2>Example</h2>
+         <p> <span id="div">div </span> { <br>
+          <span id="red">overflow</span> : <span id="blue">auto</span> ;<br>
+            }
+          </p>
+          <button class="btn-primary" title=" scroll overflow code and output">Try it yourself</button>
+      </div>
+  
+      </section>
+
+      <!-- overflow-x and overflow-y -->
+      <section class="overflow-x-y">
+        <div><h2>overflow-x and overflow-y</h2>
+          <p>The <span id="overflow"> overflow-x </span>and <span id="overflow">overflow-y</span> properties specifies whether to change the overflow of content just horizontally or vertically (or both):</p>
+         <p><span id="overflow">overflow-x </span>specifies what to do with the left/right edges of the content. <br>
+            <span id="overflow">overflow-y</span> specifies what to do with the top/bottom edges of the content..</p>
+            <p class="x-y-overflow">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+      </div>  
+      <div class="x-y-overflow-example">
+         <h2>Example</h2>
+         <p> <span id="div">div </span> { <br>
+          <span id="red">overflow-x</span> : <span id="blue">hidden</span> ;<br>
+          <span id="red">overflow-y</span> : <span id="blue">scroll</span> ;<br>
+            }
+          </p>
+          <button class="btn-primary" title=" scroll overflow-x and overflow-y code and output">Try it yourself</button>
+      </div>
+  
+      </section>
+</body>
+</html>

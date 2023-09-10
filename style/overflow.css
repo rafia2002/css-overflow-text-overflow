@@ -1,0 +1,232 @@
+/* header part */
+body{
+    margin: 10px 240px; 
+    border: 1px dotted seagreen;
+     padding: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ header{
+   
+    border-bottom: 1px dotted seagreen;
+    padding: 20px;
+    padding-top: 0px;
+} 
+header>h1{
+    font-size: 45px;
+    padding-bottom: 30px;
+    font-style:oblique;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-primary{
+   border: 1px solid seagreen;
+   background-color:  seagreen;
+   color: white;
+   padding: 20px;
+   border-radius: 8px;
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   cursor: pointer;
+}
+
+
+/* section demo */
+ .demo{
+    border-bottom: 1px dotted seagreen;
+    padding: 20px;
+   
+    
+} 
+
+#overflow{
+      color: brown;
+      background-color: lightgray;
+}
+.demo>h3{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.demo>p{
+    overflow: scroll;
+    height: 100px;
+    padding: 10px;
+    background-color: seagreen;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* CSS-Overflow */
+.CSS-Overflow{
+    border-bottom: 1px dotted seagreen;
+    border-bottom-width: 1px;
+   padding-bottom: 20px;
+     
+}
+.CSS-Overflow>div{
+    padding: 20px;
+}
+
+.note{
+    background-color:lightgoldenrodyellow;
+    padding: 40px;
+}
+
+/*  <!-- overflow: hidden --> */
+
+
+.overflow-hidden{
+    border-bottom: 1px dotted seagreen;
+    /* border-bottom-width: 1px; */
+   padding-bottom: 20px;
+}
+
+.hidden-overflow{
+    border: 1px solid black;
+    background-color: salmon;
+    overflow: hidden;
+    width: 40%;
+    height: 80px;
+}
+.hidden-overflow-example{
+    background-color: aliceblue;
+    padding: 5px 0px 30px 20px;
+}
+
+.hidden-overflow-example>p{
+          border: 1px solid white;
+          background-color: white;
+          width: 90%;
+          padding: 10px;
+          font-size: 15px;
+}
+#div{
+    color: lightcoral;
+}
+#red{
+    color: red;
+}
+#blue{
+    color: blue;
+}
+
+/* overflow-visible */
+
+.overflow-visible{
+    border-bottom: 1px dotted seagreen;
+   padding-bottom: 20px;
+}
+
+.visible-overflow{
+    border: 1px solid black;
+    background-color: salmon;
+    overflow: visible;
+    width: 40%;
+    height: 80px;
+ 
+}
+.visible-overflow-example{
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding: 5px 0px 30px 20px;
+}
+.visible-overflow-example>p{
+    border: 1px solid white;
+    background-color: white;
+    width: 90%;
+    padding: 30px;
+    font-size: 15px;
+    border-left: 5px solid seagreen;
+}
+
+
+/* scroll overflow */
+
+.overflow-scroll{
+    border-bottom: 1px dotted seagreen;
+   padding-bottom: 20px;
+}
+
+.scroll-overflow{
+    border: 1px solid black;
+    background-color: salmon;
+    overflow: scroll;
+    width: 40%;
+    height: 80px;
+ 
+}
+.scroll-overflow-example{
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding: 5px 0px 30px 20px;
+}
+.scroll-overflow-example>p{
+    border: 1px solid white;
+    background-color: white;
+    width: 90%;
+    padding: 30px;
+    font-size: 15px;
+    border-left: 5px solid seagreen;
+}
+
+/* overflow: auto */
+
+.overflow-auto{
+    border-bottom: 1px dotted seagreen;
+   padding-bottom: 20px;
+}
+
+.auto-overflow{
+    border: 1px solid black;
+    background-color: salmon;
+    overflow: auto;
+    width: 40%;
+    height: 80px;
+ 
+}
+.auto-overflow-example{
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding: 5px 0px 30px 20px;
+}
+.auto-overflow-example>p{
+    border: 1px solid white;
+    background-color: white;
+    width: 90%;
+    padding: 30px;
+    font-size: 15px;
+    border-left: 5px solid seagreen;
+}
+
+/* overflow-x-y */
+
+.overflow-x-y{
+    border-bottom: 1px dotted seagreen;
+   padding-bottom: 20px;
+}
+
+.x-y-overflow{
+    border: 1px solid black;
+    background-color: salmon;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+    width: 40%;
+    height: 80px;
+ 
+}
+.x-y-overflow-example{
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding: 5px 0px 30px 20px;
+}
+.x-y-overflow-example>p{
+    border: 1px solid white;
+    background-color: white;
+    width: 90%;
+    padding: 30px;
+    font-size: 15px;
+    border-left: 5px solid seagreen;
+}
